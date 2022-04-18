@@ -4,6 +4,7 @@ import type { ITabsProps } from './types';
 import { useThemeProps } from '../../../hooks';
 import { TabsContext } from './Context';
 import { Item } from '@react-stately/collections';
+// @ts-ignore-next-line
 import { useTabsState } from '@react-stately/tabs';
 import TabViews from './TabViews';
 import TabBar from './TabBar';

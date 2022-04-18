@@ -175,6 +175,16 @@ const Select = (
       focusable={false}
       isDisabled={isDisabled}
       pointerEvents="none"
+      // @ts-ignore-next-line
+      onPressIn={
+        Platform.OS !== 'web'
+          ? () => {
+              Keyboard.dismiss();
+              setIsOpen(true);
+              onOpen && onOpen();
+            }
+          : undefined
+      }
     />
   );
 

@@ -4,6 +4,7 @@ import type { ResponsiveValue } from '../../types/responsiveValue';
 import type { ISizes } from '../../../theme/base/sizes';
 import type { SvgProps } from 'react-native-svg';
 import type { IColors } from '../../../theme/base/colors';
+// @ts-ignore-next-line
 export interface IIconProps
   extends Omit<
       SvgProps,

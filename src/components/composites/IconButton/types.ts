@@ -3,6 +3,7 @@ import type { IIconProps } from '../../primitives/Icon';
 import type { ResponsiveValue, VariantType } from '../../types';
 import type { ISizes } from '../../../theme/base/sizes';
 
+// @ts-ignore-next-line
 export interface IIconButtonProps
   extends Omit<IPressableProps, 'children' | 'color'>,
     Omit<
